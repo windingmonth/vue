@@ -1,17 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <MyComp/>
+  <hr/>
+  <elementui/>
 </template>
 
 
 
 <script>
 import MyComp from './components/MyComp.vue'
+import elementui from './components/Elementui.vue'
 
 export default {
   name: 'App',
   components: {
-    MyComp
+    MyComp,
+    elementui
   }
 }
 </script>
