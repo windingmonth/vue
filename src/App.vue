@@ -1,21 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <MyComp/>
-  <hr/>
-  <elementui/>
+  <el-container>
+        <!--顶部-->
+        <el-header style="height: 300px">
+          <Carousel/>
+        </el-header>
+
+        <!--中央区域-->
+        <el-main>
+            <el-container>
+                <!--左侧导航栏-->
+                <el-aside>
+                  <div style="border-style:solid;border-width:1px;height: 100%;"></div>
+                </el-aside>
+                <!--主内容显示区域，数据内容都是在这里面渲染的-->
+                <el-main>
+                  <Weather/>
+                </el-main>
+            </el-container>
+        </el-main>
+
+        <!--底部-->
+        <el-footer>
+          <div style="border-style:solid;border-width:2px;height: 100%;"></div>
+        </el-footer>
+    </el-container>
 </template>
 
 
 
 <script>
-import MyComp from './components/MyComp.vue'
-import elementui from './components/Elementui.vue'
+import Weather from './components/WeatherComp.vue'
+import Carousel from './components/CarouselComp.vue'
 
 export default {
   name: 'App',
   components: {
-    MyComp,
-    elementui
+    Weather,
+    Carousel,
   }
 }
 </script>

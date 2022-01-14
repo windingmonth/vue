@@ -1,7 +1,6 @@
 <template>
-  
   <div id="elementui">
-    <el-button @click="visible = true">Button</el-button>
+    <el-button @click="showinfo">Button</el-button>
     <el-dialog v-model="visible" title="Hello world">
       <p>Try Element</p>
     </el-dialog>
@@ -17,6 +16,12 @@ export default {
 
   data(){
     return { visible: false }
+  },
+  methods: {
+    showinfo(e){
+      e.target.visible = true;
+      console.log('dianji');
+    }
   }
 }
 </script>
