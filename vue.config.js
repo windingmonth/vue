@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'vue',
+    publicPath: 'vue',
     //Vue3配置axios跨域
     devServer: {
         proxy: {
