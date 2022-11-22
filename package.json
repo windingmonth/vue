@@ -1,5 +1,6 @@
 {
   "name": "myweb",
+  "homepage": "https://windingmonth.github.io/vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
